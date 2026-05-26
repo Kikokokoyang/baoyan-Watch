@@ -3,7 +3,7 @@ name: BaoyanWatch Monitor
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 0 * * *"
+    - cron: "01 0 * * *"  #定时任务执行的UTC时间，对应UTC为下午6:00(设置为下班的时间检查当日是否有新增)
 
 permissions:
   contents: write
